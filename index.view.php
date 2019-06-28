@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Paginacion</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
 </head>
 <body>
@@ -9,15 +10,20 @@
 		<h1>Articulos</h1>
 
 		<section class="articulos">
-			<ul>
-				
+			<table class="table table-striped table-bordered" >
+				<tr class="">
+					<th>id</th>
+					<th>Articulo</th>
+				</tr>
 				<?php foreach ($articulos as $articulo ): ?>
-					<li> <?php echo $articulo['id'] . ' - '  . $articulo['articulo'] ?> </li>
+				<tr>
+					<td> <?php echo $articulo['id'] ; ?> </td>
+					<td> <?php echo  $articulo['articulo'] ;  ?> </td> 
+				</tr>
 
-					
 				<?php endforeach ?>
 
-			</ul>
+			</table>
 		</section>
 
 		<section class="paginacion">
@@ -64,6 +70,8 @@
 			</ul>
          
 		</section>
+		
+
 		
 	</div>
 

@@ -2,7 +2,7 @@
 
   try {
 
-    $conexion = new PDO('mysql:host=localhost;dbname=paginacion' , 'david' , '12345') ;  
+    $conexion = new PDO('mysql:host=localhost;dbname=paginacion' , 'root' , '') ;  
   } 
 
   catch (PDOException $e) {

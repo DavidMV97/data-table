@@ -55,6 +55,8 @@
         }
 
 
+
+
         .sidebar ul li{
             padding: 1.5rem ; 
             list-style: none ; 
@@ -62,16 +64,27 @@
         }
 
         .sidebar ul li a{
-            background: #545454 ; 
+            
             padding: 1rem ; 
             text-decoration: none ; 
            color: #D6E2E3  ;
 
         }
 
+        .color-sidebar-a{
+            background: #545454 ; 
+
+        }
+
+         .active{
+            background: blue ;
+        }
+
         .sidebar ul li a:hover{
             background:#F8B135 ;
         }
+
+      
 
         .contenedor-imagenes{
             display: flex; 

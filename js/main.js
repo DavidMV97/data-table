@@ -22,15 +22,20 @@
         
 }
 
+let contenido = document.getElementsByClassName('.contenido-principal') ; 
 
-
-informe1.addEventListener('click' , ocultarInformacion) ; 
-let contenido = document.getElementsByClassName('#contenido-principal') ; 
+informe1.addEventListener('click' , ocultarInformacion) ;  
 
   function ocultarInformacion(e){
     e.preventDefault() ; 
 
-    contenido.style.display = 'none' ; 
+    console.log('se ejecuto la funcion ocultar Informacion') ; 
+    informe1.classList.remove("color-sidebar-a") ; 
+    informe1.classList.add("active") ; 
+    
+
+    /* contenido.style.visibility = "hidden ererrrree"; */
 
 
   }
+

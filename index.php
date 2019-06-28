@@ -66,12 +66,13 @@
         <aside class="sidebar">
             
             <ul>
-                <li> <a href="" id="informe1" > Informe 1   </a> </li>
+                <li> <a href="" id="inicio" class="active" > Inicio   </a> </li>
                 
-                <li> <a href="">Informe 2 </a> </li>
-                <li> <a href="">Informe 3 </a> </li>
-                <li> <a href="">Informe 4 </a> </li>
-                <li> <a href="">Informe 5 </a> </li>
+                <li> <a href="" id="informe1" class="color-sidebar-a" > Informe 1   </a> </li>
+                <li> <a href="" class="color-sidebar-a" >Informe 2 </a> </li>
+                <li> <a href="" class="color-sidebar-a" >Informe 3 </a> </li>
+                <li> <a href="" class="color-sidebar-a">Informe 4 </a> </li>
+                <li> <a href="" class="color-sidebar-a">Informe 5 </a> </li>
             </ul>
 
         </aside>

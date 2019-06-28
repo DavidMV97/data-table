@@ -1,0 +1,132 @@
+        html {
+            box-sizing: border-box;
+        }
+        
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .logo {
+            max-width: 100%;
+        }
+        
+        .imagen-destacada {
+            width: 100%;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        .encabezado-sitio {
+            padding: 2rem 0;
+            display: flex;
+            justify-content: center;
+        }
+
+
+        
+        .navegacion {
+            background-color: #05bae6;
+            font-size: 2rem; 
+        }
+        
+        .navegacion ul {
+            max-width: 1300px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            padding: 0;
+            flex-direction: column;
+        }
+        
+        .navegacion ul li {
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+
+        .sidebar ul li{
+            padding: 1.5rem ; 
+            list-style: none ; 
+
+        }
+
+        .sidebar ul li a{
+            background: #545454 ; 
+            padding: 1rem ; 
+            text-decoration: none ; 
+           color: #D6E2E3  ;
+
+        }
+
+        .sidebar ul li a:hover{
+            background:#F8B135 ;
+        }
+
+        .contenedor-imagenes{
+            display: flex; 
+            justify-content: space-between; 
+            text-align: center;
+        }
+
+        .contenedor-imagenes img{
+            margin-top: 1.2rem; 
+            width: 200px ; 
+            height: 150px ; 
+        }
+
+        
+
+        
+        @media screen and (min-width:768px) {
+            .navegacion ul {
+                flex-direction: row;
+            }
+        }
+        
+        .navegacion ul li a {
+            text-decoration: none;
+            color: #D6E2E3  ;
+        }
+        
+        .contenido-principal {
+            max-width: 50%;
+            margin: 0 auto;
+            margin-bottom: 2rem;
+        }
+        
+        .sidebar {
+            background-color: #e5e5e5;
+            padding: 2rem;
+        }
+        
+        @media screen and (min-width:768px) {
+            .contenido {
+                display: flex;
+            }
+            .sidebar {
+                flex: 0 0 20%;
+                /*Pondra el sidebar del lado izquierdo  */
+                order: -1;
+            }
+            .derecha {
+                order: 2;
+            }
+        }
+        
+        .footer {
+            background-color: #db008d;
+            text-align: center;
+            color: white;
+
+        }

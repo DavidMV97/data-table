@@ -3,13 +3,14 @@
 <head>
 	<title>Paginacion</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css//all.css">
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
 </head>
-<body>
-	<div class="contenedor">
-		<h1>Articulos</h1>
 
-		<section class="articulos">
+
+<body>
+	
+<section class="articulos">
 			<table class="table table-striped table-bordered" >
 				<tr class="">
 					<th>id</th>
@@ -70,6 +71,36 @@
 			</ul>
          
 		</section>
+
+
+
+    <!--Contenido-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
 		
 
 		

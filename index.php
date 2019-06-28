@@ -11,21 +11,11 @@
     <link rel="stylesheet" type="text/css" href="css/all.css">
     <link rel="stylesheet" href="css/styles.css">
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script>
-     <script> 
-        function cargar(){
-            var url="index1.php"
-            $.ajax({   
-                type: "POST",
-                url:url,
-                data:{},
-                success: function(datos){       
-                    $('#tabla').html(datos);
-                }
-            });
-        }
-     </script>
+     <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script> -->
+     <script type="text/javascript" src="js/jquery.min.js" ></script> 
 
+    
+     
 </head>
 
 <body>
@@ -70,15 +60,13 @@
                 
             </div>
 
-             <div id="tabla">
-    
-            </div>
+            
 
         </main>
         <aside class="sidebar">
             
             <ul>
-                <li> <a href="" onclick="cargar();"> Informe 1   </a> </li>
+                <li> <a href="" id="informe1" > Informe 1   </a> </li>
                 
                 <li> <a href="">Informe 2 </a> </li>
                 <li> <a href="">Informe 3 </a> </li>
@@ -87,16 +75,30 @@
             </ul>
 
         </aside>
+
+       
        
     </div>
     <!--Contenido-->
 
     <footer class="footer">
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo recusandae,</p>
+
+        
     </footer>
 
+      <div id="tabla">
+    
+        </div>
+
+    
 
 
+
+      
 </body>
+
+   <script type="text/javascript" src="js/main.js"></script>
+
 
 </html>

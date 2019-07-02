@@ -1,4 +1,5 @@
- 
+ /*
+  
   let informe1 = document.querySelector('#informe1') ;
   informe1.addEventListener('click' , cargar) ;  
   
@@ -17,10 +18,9 @@
          $('#tabla').html(datos);
      }
  });
-
-         
-        
+      
 }
+
 
 let contenido = document.getElementsByClassName('.contenido-principal') ; 
 
@@ -32,10 +32,18 @@ informe1.addEventListener('click' , ocultarInformacion) ;
     console.log('se ejecuto la funcion ocultar Informacion') ; 
     informe1.classList.remove("color-sidebar-a") ; 
     informe1.classList.add("active") ; 
-    
 
-    /* contenido.style.visibility = "hidden ererrrree"; */
+    informe1 = informe1.id ; 
+
+    console.log( informe1)   ; 
+
+
+     contenido.style.display = "none"; 
+
+
 
 
   }
+  
+  */
 

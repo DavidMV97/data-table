@@ -15,13 +15,13 @@
 
    $pagina = isset($_GET['pagina']) ? (int)$_GET['pagina'] : 1 ;  //obtiene el valor de la pagina en la que estamos 
 
-   $postPorPagina = 5 ; 
+   //$postPorPagina = 5 ; 
 
 
-   $inicio = ($pagina > 1 ) ? ($pagina * $postPorPagina - $postPorPagina) : 0  ; 
+   //$inicio = ($pagina > 1 ) ? ($pagina * $postPorPagina - $postPorPagina) : 0  ; 
 
  //en esta variable almacenanos la consulta sql que nos traera los articulos : 
-  $articulos = $conexion->prepare("SELECT SQL_CALC_FOUND_ROWS  * FROM articulos LIMIT $inicio , $postPorPagina") ; 
+  $articulos = $conexion->prepare("SELECT SQL_CALC_FOUND_ROWS  * FROM articulos ") ; 
 
   $articulos->execute() ; 
   $articulos = $articulos->fetchAll() ; 

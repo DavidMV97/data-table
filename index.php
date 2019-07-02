@@ -62,13 +62,18 @@
 
             
 
+            
+
         </main>
+         <div id="tabla">
+    
+        </div>
         <aside class="sidebar">
             
             <ul>
                 <li> <a href="" id="inicio" class="active" > Inicio   </a> </li>
-                
-                <li> <a href="" id="informe1" class="color-sidebar-a" > Informe 1   </a> </li>
+
+                <li> <a href="index1.php" id="informe1" class="color-sidebar-a" > Informe 1   </a> </li>
                 <li> <a href="" class="color-sidebar-a" >Informe 2 </a> </li>
                 <li> <a href="" class="color-sidebar-a" >Informe 3 </a> </li>
                 <li> <a href="" class="color-sidebar-a">Informe 4 </a> </li>
@@ -88,9 +93,7 @@
         
     </footer>
 
-      <div id="tabla">
-    
-        </div>
+     
 
     
 

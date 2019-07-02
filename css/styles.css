@@ -76,12 +76,14 @@
 
         }
 
-         .active{
-            background: blue ;
-        }
+         
 
         .sidebar ul li a:hover{
             background:#F8B135 ;
+        }
+
+        .active{
+            background: #F8B135 ; 
         }
 
       
@@ -112,8 +114,8 @@
             color: #D6E2E3  ;
         }
         
-        .contenido-principal {
-            max-width: 50%;
+        #contenido-principal {
+            max-width: 100%;
             margin: 0 auto;
             margin-bottom: 2rem;
         }

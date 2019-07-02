@@ -32,7 +32,7 @@
     </nav>
 
     <div class="contenido">
-        <main class="contenido-principal">
+        <main id="contenido-principal">
             <h1> </h1>
 
             <hr> <br>
@@ -60,21 +60,17 @@
                 
             </div>
 
-            
-
-            
-
         </main>
-         <div id="tabla">
-    
-        </div>
+         <div id="tabla"> </div>
+
+
         <aside class="sidebar">
             
             <ul>
-                <li> <a href="" id="inicio" class="active" > Inicio   </a> </li>
+                <li> <a href="" id="inicio" class="color-sidebar-a" > Inicio   </a> </li>
 
-                <li> <a href="index1.php" id="informe1" class="color-sidebar-a" > Informe 1   </a> </li>
-                <li> <a href="" class="color-sidebar-a" >Informe 2 </a> </li>
+                <li> <a href="" id="informe1" class="color-sidebar-a"> Informe 1   </a> </li>
+                <li> <a href="" id="informe2" class="color-sidebar-a informe2" >Informe 2 </a> </li>
                 <li> <a href="" class="color-sidebar-a" >Informe 3 </a> </li>
                 <li> <a href="" class="color-sidebar-a">Informe 4 </a> </li>
                 <li> <a href="" class="color-sidebar-a">Informe 5 </a> </li>
@@ -98,11 +94,11 @@
     
 
 
-
+    <script type="text/javascript" src="js/main.js"></script>
       
 </body>
 
-   <script type="text/javascript" src="js/main.js"></script>
+   
 
 
 </html>

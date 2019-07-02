@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Paginacion</title>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	 <link rel="stylesheet" href="css/bootstrap.min.css"> 
 	<link rel="stylesheet" type="text/css" href="css//all.css">
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
 	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
@@ -15,11 +15,21 @@
 <body>
 	
 <section class="articulos ">
-			<table class="table table-striped table-bordered col-12" id="datatable" >
+			<table class="table table-striped table-hover table-bordered" id="datatable" >
 				<thead>
 					<tr>
-						<th>id</th>
-						<th>Articulo</th>
+						<th>Id Estacion</th>
+						<th>Nombre Estacion</th>
+						<th>
+
+						<select>
+							<option>Estacion Activa</option>
+							<option>S</option>
+							<option>N</option>
+						</select>	
+
+						</th>
+						<th>Direccion Estacion</th>
 					</tr>
 				</thead>
 
@@ -27,8 +37,10 @@
 				<?php foreach ($articulos as $articulo ): ?>
 				
 					<tr>
-						<td> <?php echo $articulo['id'] ; ?> </td>
-						<td> <?php echo  $articulo['articulo'] ;  ?> </td> 
+						<td> <?php echo $articulo['EstacionId'] ; ?> </td>
+						<td> <?php echo  $articulo['EstacionNmb'] ;  ?> </td> 
+						<td> <?php echo  $articulo['EstacionAct'] ;  ?> </td> 
+						<td> <?php echo  $articulo['EstacionDir'] ;  ?> </td> 
 					</tr>
 				
 				
@@ -38,6 +50,7 @@
 
 			</table>
 </section>
+  <br><br><br><br> 
 
 		<section class="paginacion">
            <ul>  

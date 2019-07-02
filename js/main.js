@@ -1,49 +1,62 @@
- /*
-  
-  let informe1 = document.querySelector('#informe1') ;
+ 
+let informe1 = document.getElementById('informe1') ;
+
+let padre ; 
+
+let contenidoPrincipal = document.getElementById("contenido-principal") ; 
+
+
+
+informe1.addEventListener('click', remover) ; 
+
+
+                                               
   informe1.addEventListener('click' , cargar) ;  
   
 
-
         function cargar(e){
-          e.preventDefault() ; 
 
 
+          e.preventDefault() ;
           let url="index1.php" ; 
           $.ajax({   
           type: "POST",
           url:url,
           data:{},
-          success: function(datos){       
+          success: function(datos){ 
+          $('#tabla').css( {"margin" : "auto" , "margin-top" : "100px" });      
+
          $('#tabla').html(datos);
+
      }
  });
+
+          informe1.classList.remove('color-sidebar-a') ; 
+          informe1.classList.add('active') ; 
+
+
+          
       
 }
 
+function remover(e){
+  e.preventDefault(); 
 
-let contenido = document.getElementsByClassName('.contenido-principal') ; 
+   
 
-informe1.addEventListener('click' , ocultarInformacion) ;  
+   console.log(contenidoPrincipal) ; 
+   
+   contenidoPrincipal.style.display = 'none'  ; 
 
-  function ocultarInformacion(e){
-    e.preventDefault() ; 
-
-    console.log('se ejecuto la funcion ocultar Informacion') ; 
-    informe1.classList.remove("color-sidebar-a") ; 
-    informe1.classList.add("active") ; 
-
-    informe1 = informe1.id ; 
-
-    console.log( informe1)   ; 
-
-
-     contenido.style.display = "none"; 
+}
 
 
 
 
-  }
+
+
+
+
+
   
-  */
 

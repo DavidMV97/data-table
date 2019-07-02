@@ -2,7 +2,7 @@
 
   try {
 
-    $conexion = new PDO('mysql:host=localhost;dbname=paginacion' , 'david' , '12345') ;  
+    $conexion = new PDO('mysql:host=localhost;dbname=Estaciones' , 'david' , '12345') ;  
   } 
 
   catch (PDOException $e) {
@@ -21,7 +21,7 @@
    //$inicio = ($pagina > 1 ) ? ($pagina * $postPorPagina - $postPorPagina) : 0  ; 
 
  //en esta variable almacenanos la consulta sql que nos traera los articulos : 
-  $articulos = $conexion->prepare("SELECT SQL_CALC_FOUND_ROWS  * FROM articulos ") ; 
+  $articulos = $conexion->prepare("SELECT SQL_CALC_FOUND_ROWS  * FROM Estaciones ") ; 
 
   $articulos->execute() ; 
   $articulos = $articulos->fetchAll() ; 
